@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url('2dagl4i7dgxa1.jpg')
+    background: url('anhbailam1.jpg')
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     padding: 40px;
@@ -52,7 +52,7 @@ body {
 
 .image-wrapper {
     margin-bottom: 15px;
-    background: url('2dagl4i7dgxa1.jpg');
+    background: url('anhbailam1.jpg');
     overflow: hidden;
     border: 1px solid #ddd;
     background-color: #eee;
@@ -62,7 +62,7 @@ body {
 }
 
 .image-wrapper img {
-    background: url('2dagl4i7dgxa1.jpg');
+    background: url('anhbailam1.jpg');
     width: 100%;
     height: auto;
     display: block;
@@ -70,12 +70,12 @@ body {
 }
 
 .image-wrapper.small {
-    background: url('2dagl4i7dgxa1.jpg');
+    background: url('anhbailam1.jpg');
     height: 70px;
 }
 
 .image-wrapper.large {
-    background: url('2dagl4i7dgxa1.jpg');
+    background: url('anhbailam1.jpg');
     height: 300px;
 }
 
