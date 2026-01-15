@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Layout - WEB_KTM</title>
+    <title>Web KTM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <aside class="sidebar">
+        <div class="sidebar">
             <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
             <h3>More Text</h3>
             <p>Lorem ipsum dolor sit ame.</p>
             
-            <div class="fake-img" style="height:60px;">Image</div><br>
-            <div class="fake-img" style="height:60px;">Image</div><br>
-            <div class="fake-img" style="height:60px;">Image</div>
-        </aside>
+            <div class="image-wrapper small">
+                <img src="images/image1.jpg" alt="Description for image 1">
+            </div>
+            <div class="image-wrapper small">
+                <img src="images/image2.jpg" alt="Description for image 2">
+            </div>
+            <div class="image-wrapper small">
+                <img src="images/image3.jpg" alt="Description for image 3">
+            </div>
+        </div>
 
-        <main class="main-content">
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            
-            <h2>TITLE HEADING</h2>
-            <p class="description">Title description, Sep 2, 2024</p>
-            
-            <div class="fake-img" style="height:200px;">Image</div>
-            
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </main>
+        <div class="main-content">
+            <div class="section">
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+
+            <div class="section">
+                <h2>TITLE HEADING</h2>
+                <p class="description">Title description, Sep 2, 2024</p>
+                <div class="image-wrapper large">
+                    <img src="images/main-image.jpg" alt="Main content image">
+                </div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
     </div>
 
 </body>
