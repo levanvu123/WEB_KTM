@@ -1,64 +1,98 @@
-/* Thiết lập cơ bản */
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 20px;
-    background-color: #f1f1f1;
+    background: url('2dagl4i7dgxa1.jpg')
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    padding: 40px;
+    background-color: #f9f9f9;
 }
 
-/* Container sử dụng Flexbox để chia cột */
 .container {
     display: flex;
-    flex-wrap: wrap;
-    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
+    gap: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
 }
 
-/* Sidebar chiếm khoảng 30% */
 .sidebar {
     flex: 30%;
-    padding-right: 20px;
-    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Nội dung chính chiếm khoảng 70% */
+.sidebar h3 {
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
 .main-content {
     flex: 70%;
-    padding-left: 20px;
 }
 
-/* Giả lập khung hình ảnh màu xám như trong đề */
-.fake-img {
-    background-color: #aaa;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Định dạng văn bản */
-h2 {
-    margin-top: 20px;
+.main-content h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
 .description {
-    color: gray;
-    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
-/* Responsive cho điện thoại (chuyển thành 1 cột) */
-@media screen and (max-width: 600px) {
+.image-wrapper {
+    margin-bottom: 15px;
+    background: url('2dagl4i7dgxa1.jpg');
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    background: url('2dagl4i7dgxa1.jpg');
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.image-wrapper.small {
+    background: url('2dagl4i7dgxa1.jpg');
+    height: 70px;
+}
+
+.image-wrapper.large {
+    background: url('2dagl4i7dgxa1.jpg');
+    height: 300px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
+        padding: 10px;
+        gap: 20px;
     }
-    .sidebar, .main-content {
-        flex: 100%;
-        padding: 0;
-        border-right: none;
+    .image-wrapper.small, .image-wrapper.large {
+        height: 200px;
     }
+}
+
 }
